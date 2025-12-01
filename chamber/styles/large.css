@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -126,4 +126,3 @@
     .place-card:hover img {
         filter: brightness(1.1); /* Makes image slightly brighter on hover */
     }
-}
