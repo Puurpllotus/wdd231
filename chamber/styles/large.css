@@ -75,4 +75,55 @@
         background: var(--background-color);
         border: 2px solid var(--secondary-color);
     }
+
+    .discover-layout {
+        grid-template-columns: 250px 1fr; /* Sidebar | Content */
+        align-items: start;
+    }
+    
+    .sidebar {
+        position: sticky; /* Keeps sidebar visible while scrolling */
+        top: 2rem;
+    }
+
+    /* GRID AREAS LOGIC */
+    .places-grid {
+        display: grid;
+        gap: 1.5rem;
+        /* Define the grid areas for a 3-column layout */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card5" 
+            "card6 card7 card8";
+            /* Note: card5 spans two columns in this definition */
+    }
+
+    /* Assign JS classes to Grid Areas */
+    .area-1 { grid-area: card1; }
+    .area-2 { grid-area: card2; }
+    .area-3 { grid-area: card3; }
+    .area-4 { grid-area: card4; }
+    .area-5 { grid-area: card5; }
+    .area-6 { grid-area: card6; }
+    .area-7 { grid-area: card7; }
+    .area-8 { grid-area: card8; }
+
+    /* HOVER EFFECTS (Desktop Only) */
+    .place-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .place-card:hover {
+        transform: translateY(-10px); /* Lifts the card up */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    .place-card img {
+        transition: filter 0.3s ease;
+    }
+
+    .place-card:hover img {
+        filter: brightness(1.1); /* Makes image slightly brighter on hover */
+    }
 }
