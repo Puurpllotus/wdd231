@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Course Home Page</title>
+    <meta name="description" content="A site dedicated to Sampson Longjohn's WDD231 assignments">
+    <meta name="author" content="Sampson Longjohn">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/code-window.svg" alt="Student photo" class="profile-img" fetchpriority="high">
+        <span>Web And Computer Programming</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="banner">
+            <h2> About Me</h2>
+            <p>Hello! My name is Sampson Longjohn, and I am a student at BYU-Idaho studying Web Development and Design.
+                I have a passion for creating beautiful and functional websites that provide a great user experience.
+                In my free time, I enjoy watching anime, listening to music and working out.</p>
+        </section>
+        <section class="student-photo">
+            <h2> Student Photo</h2>
+            <img src="images/profile.webp" alt="Student photo" fetchpriority="high">
+        </section>
+
+        <section class="course-info">
+            <h2> Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button id="allBtn">All</button>
+                <button id="wddBtn">WDD</button>
+                <button id="cseBtn">CSE</button>
+
+                <p id="totalCourses">The total number of courses listed below is 6</p>
+                <p id="totalCredits"></p>
+            </div>
+
+            <div id="courseList">
+                <button class="course-btn" data-subject="CSE">CSE 110</button>
+                <button class="course-btn" data-subject="WDD">WDD 130</button>
+                <button class="course-btn" data-subject="CSE">CSE 111</button>
+                <button class="course-btn" data-subject="CSE">CSE 210</button>
+                <button class="course-btn" data-subject="WDD">WDD 131</button>
+                <button class="course-btn" data-subject="WDD">WDD 231</button>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Visit Instagram"
+                height="50"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Visit Github" height="50"></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><img src="images/linkedin.svg" alt="Visit Linkedin"
+                height="50"></a>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; <span id="currentyear"></span> | Sampson Longjohn</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
