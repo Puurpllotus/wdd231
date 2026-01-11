@@ -1,0 +1,234 @@
+:root {
+  --color-primary: #292960;
+  --color-secondary: #23CDCD;
+  --color-accent: #f58762;
+  --color-font: #FFFFFF;
+  --color-font2: #1d1b1b;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+
+}
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 25px 0 25px 10px;
+  align-items: end;
+  column-gap: 8px;
+  background-color: var(--color-primary);
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+header span {
+  font-size: 1.7rem;
+  color: var(--color-secondary);
+  font-family: var(--font-secondary);
+
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--color-font);
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630";
+  font-size: 1.5rem;
+
+}
+
+.hamburger.show::before {
+  content: "\2715";
+}
+
+.navigation {
+  display: none;
+  background-color: #d8d5d5;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: .8rem 10px;
+  color: var(--color-font1);
+  text-decoration: none;
+  border-bottom: solid 1px var(--font-color2);
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: var(--font-primary);
+}
+
+.navigation li.current {
+  background-color: var(--color-accent);
+  color: var(--color-font);
+}
+
+.navigation a:hover {
+  color: var(--color-font);
+  background-color: var(--color-primary);
+}
+
+body {
+  font-family: var(--font-primary);
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 30px;
+}
+
+h1 {
+  text-align: left;
+  font-family: var(--font-secondary);
+}
+
+h2,
+h3 {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+  font-family: var(--font-secondary);
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.banner {
+  background-color: #dbdbdb71;
+  border-radius: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.banner h2,
+.banner h3 {
+  display: block;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+h2 {
+  padding: 0.5em;
+}
+
+.course-buttons {
+  margin-bottom: 20px;
+}
+
+.course-buttons button {
+  margin: 5px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-secondary);
+  color: var(--color-font2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.course-buttons button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-font)
+}
+
+#totalCourses {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#courseList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  max-width: 700px;
+  margin-bottom: 30px;
+  justify-items: center;
+  margin: 0 auto 30px;
+  box-sizing: border-box;
+}
+
+.course-btn {
+  padding: 15px 10px;
+  border-radius: 8px;
+  background-color: var(--color-secondary);
+  color: var(--color-font2);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.course-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-font);
+}
+
+
+.completed {
+  background-color: var(--color-accent);
+  color: var(--color-font);
+}
+
+.completed::before {
+  content: "✔️ ";
+  color: #2d8a35;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 10px;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding-bottom: 20px;
+}
+
+.socials a {
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: white 2px dashed;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.socials a:hover {
+  background-color: white;
+
+}

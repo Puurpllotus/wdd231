@@ -1,0 +1,72 @@
+ /* --- Color Schema & Typography Implementation --- */
+ :root {
+     --color-primary-accent: #ADF802;
+     /* Luxury Gold */
+     --color-secondary-purple: #050531;
+     /* Deep Purple */
+     --color-text-light: #FFFFFF;
+     /* Clean White */
+    --color-background-grey: #3b3a3a;
+        /* Deep Grey */
+     --font-heading: 'Playfair Display', serif;
+     --font-body: 'Lato', sans-serif;
+ }
+
+ header {
+     background-color: var(--color-secondary-purple);
+     padding: 20px;
+     text-align: center;
+     border-bottom: 5px solid var(--color-primary-accent);
+ }
+
+
+ body {
+     font-family: var(--font-body);
+     color: var(--color-text-light);
+     /* Default text color */
+     background-color: var(--color-background-grey);
+     /* Main content background */
+     line-height: 1.6;
+     margin: 0rem;
+     padding: 20px;
+ }
+ 
+ h1,
+ h2 {
+     font-family: var(--font-heading);
+    color: var(--color-primary-accent);
+     /* Headings use Primary Accent */
+     padding-bottom: 5px;
+     margin-top: 30px;
+ }
+
+ header p {
+     color: var(--color-text-light);
+     border: none;
+     
+ }
+
+ /* Styling for the Wireframe section to distinguish it */
+ .wireframe-section {
+             display: flex;
+            flex-direction: column;
+             padding: 20px;
+             margin-top: 20px;
+             margin-left:2rem;
+             align-items: center;
+     }
+     .wireframe-section img {
+        
+         max-width: 100%;
+         height: auto;
+         
+     }
+
+     footer {
+         background-color:var(--color-secondary-purple);
+         color: var(--color-text-light);
+         text-align: center;
+         padding: 1rem;
+         margin-top: 1rem;
+         border-top: 5px solid var(--color-primary-accent);
+     }
