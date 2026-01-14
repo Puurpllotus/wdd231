@@ -27,7 +27,7 @@ header img {
 
 header span {
   font-size: 1.7rem;
-  color: var(--color-secondary);
+  color: var(--color-font);
   font-family: var(--font-secondary);
 
 }
@@ -163,13 +163,10 @@ h2 {
 
 #courseList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 15px;
-  max-width: 700px;
-  margin-bottom: 30px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  max-width: 900px;
   margin: 0 auto 30px;
-  box-sizing: border-box;
 }
 
 .course-btn {

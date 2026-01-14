@@ -1,11 +1,20 @@
 @media only screen and (min-width: 38rem) {
-    header,nav,main,footer {
-        max-width: 1200px;
-        margin: 0 auto;
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
     }
-        header{
+
+    header {
         grid-template-columns: 24px auto 44px;
     }
+
+    footer {
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
     .hamburger {
         display: none;
     }
@@ -13,10 +22,24 @@
     .navigation {
         display: block;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
     }
-    .navigation a{
+
+    .navigation a {
         border: none;
+    }
+
+    .banner {
+        grid-column: 1 / 2;
+    }
+
+    .student-photo {
+        grid-column: 2 / 3;
+    }
+
+    .course-info {
+        grid-column: 1 / -1;
     }
 }
