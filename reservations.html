@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRC&E | Make a Reservation</title>
+    <meta name="description" content="Secure your booking for a dining cruise or submit an application for private event charter."> 
+    <meta name="author" content="Sampson Longjohn">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-name"><img src="images/Lrce.png" alt="LRC&E LOGO"></div>
+        <nav>
+            <ul aria-label="Main Navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book Your Luxury Experience</h2>
+        
+        <!-- VIDEO NOTE: The action points to a separate HTML page to handle the "submission" display -->
+        <form method="get" action="booking-confirm.html" class="reservation-form">
+            <fieldset>
+                <legend>Service Selection</legend>
+                <label for="servicename">Select Cruise / Service *</label>
+                <!-- VIDEO NOTE: This dropdown is populated by JavaScript -->
+                <select id="servicename" name="servicename" required>
+                    <option value="" disabled selected>Choose a Service ...</option>
+                    <!-- Options injected by JS -->
+                </select>
+                
+                <label for="num-guests">Number of Guests *</label>
+                <input type="number" id="num-guests" name="num-guests" min="1" max="150" required>
+
+                <label for="booking-date">Desired Date *</label>
+                <input type="date" id="booking-date" name="booking-date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="details">Special Requests (Optional)</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Confirm Reservation" class="cta-button">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-logo logo-name">LRC&E</div>
+        <div class="contact-info">
+            <p>Contact Info</p>
+            <p>+234 800 123 4567</p>
+            <p>info@lrc.com</p>
+        </div>
+        <div class="nav-links">
+            <p><a href="services.html">Services</a></p>
+            <p><a href="reservations.html">Book</a></p>
+        </div>
+        <div class="social-links">
+            <p>Follow Us</p>
+            <p>IG | YT | X</p>
+        </div>
+        <p>&copy;<span id="currentyear"></span> Lagos River Cruise & Events</p>
+        <p><a href="references.html">Image Sources & References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="#" target="_blank">View Project Video</a></p>
+    </footer>
+</body>
+</html>

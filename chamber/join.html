@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Bonny Island Chamber of Commerce - Membership Application">
+    <meta name="author" content="Sampson Longjohn">
+
+    <title>Join the Chamber | Bonny Island Chamber of Commerce</title>
+    <meta property="og:title" content="Bonny Island Chamber of Commerce">
+    <meta property="og:description" content="Connect with local businesses, entrepreneurs, and professionals.">
+    <meta property="og:image" content="https://puurpllotus.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://puurpllotus.github.io/wdd231/chamber/home.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 768px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/join.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-main.webp" alt="Bonny Island Chamber logo" class="logo">
+        <span class="site-title">Bonny Island Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="current">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Join the Chamber</h1>
+
+        <section class="join-container">
+
+            <form id="joinForm" method="get" action="thankyou.html" class="join-form">
+
+                <label>
+                    First Name:
+                    <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
+                        required>
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" name="organization-title" title="Your position in the organization"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                        placeholder="Manager, Director, etc.">
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business / Organization Name:
+                    <input type="text" name="organization" title="Enter your business or organization name"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" title="Select membership level" required>
+                        <option value="">-- Select a Level --</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+
+
+            <div class="membership-cards" aria-live="polite">
+
+                <div class="card" id="card-np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profits — free membership</p>
+                    <button type="button" data-modal="modal-np" aria-haspopup="dialog" aria-controls="modal-np">View
+                        Benefits</button>
+                </div>
+
+                <div class="card" id="card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic business benefits</p>
+                    <button type="button" data-modal="modal-bronze" aria-haspopup="dialog"
+                        aria-controls="modal-bronze">View Benefits</button>
+                </div>
+
+                <div class="card" id="card-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Expanded exposure & perks</p>
+                    <button type="button" data-modal="modal-silver" aria-haspopup="dialog"
+                        aria-controls="modal-silver">View Benefits</button>
+                </div>
+
+                <div class="card" id="card-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium visibility & full benefits</p>
+                    <button type="button" data-modal="modal-gold" aria-haspopup="dialog" aria-controls="modal-gold">View
+                        Benefits</button>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="modal-np" class="modal" role="dialog" aria-modal="true" aria-hidden="true"
+            aria-labelledby="modal-np-title">
+            <div class="modal-content">
+                <button class="close" aria-label="Close NP modal">&times;</button>
+                <h2 id="modal-np-title">NP Membership Benefits</h2>
+                <ul>
+                    <li>Free membership</li>
+                    <li>Access to chamber events</li>
+                    <li>Community support resources</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal" role="dialog" aria-modal="true" aria-hidden="true"
+            aria-labelledby="modal-bronze-title">
+            <div class="modal-content">
+                <button class="close" aria-label="Close Bronze modal">&times;</button>
+                <h2 id="modal-bronze-title">Bronze Membership Benefits</h2>
+                <ul>
+                    <li>Business directory listing</li>
+                    <li>Event invitations</li>
+                    <li>Basic advertising opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal" role="dialog" aria-modal="true" aria-hidden="true"
+            aria-labelledby="modal-silver-title">
+            <div class="modal-content">
+                <button class="close" aria-label="Close Silver modal">&times;</button>
+                <h2 id="modal-silver-title">Silver Membership Benefits</h2>
+                <ul>
+                    <li>All bronze benefits</li>
+                    <li>Home page spotlight eligibility</li>
+                    <li>Training & workshops</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal" role="dialog" aria-modal="true" aria-hidden="true"
+            aria-labelledby="modal-gold-title">
+            <div class="modal-content">
+                <button class="close" aria-label="Close Gold modal">&times;</button>
+                <h2 id="modal-gold-title">Gold Membership Benefits</h2>
+                <ul>
+                    <li>All silver benefits</li>
+                    <li>Premium advertising placement</li>
+                    <li>VIP event discounts</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact: <a href="mailto:chamber@bonnyisland.com">chamber@bonnyisland.com</a> | Address: Bonny Main St.
+            </p>
+            <p>&copy; <span id="currentyear"></span> | Sampson Longjohn | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

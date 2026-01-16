@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #87ceeb;
+    --secondary-color: #740505;
+    --background-color: #f0d3a6;
+    --font-color1: #fff;
+    --font-color2: #000;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+}
+
+/* --- FONTS & RESETS --- */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/roboto.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--font-color1);
+    color: var(--font-color2);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- HEADER & NAVIGATION (Mobile Base) --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    color: var(--font-color1);
+    padding: 1rem;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+}
+
+.site-title {
+    font-size: 1.2rem;
+    font-family: var(--font-secondary);
+    flex-grow: 1;
+    margin: 0;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--font-color1);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+    display: block;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.active::before {
+    content: "\2715";
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    background: var(--secondary-color);
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+    color: var(--font-color1);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+nav a:hover {
+    background: var(--primary-color);
+    color: var(--font-color2);
+    transition-duration: 0.3s;
+}
+
+nav .current {
+    background: var(--background-color);
+    color: var(--font-color2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main h1 {
+    margin-bottom: 1rem;
+}
+
+.member-toggle {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.member-toggle button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.member-toggle button:hover {
+    background: var(--background-color);
+}
+
+.member-toggle button.active {
+    background: var(--secondary-color);
+    color: var(--font-color1);
+}
+
+#members {
+    gap: 1rem;
+}
+
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-card {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    background: var(--background-color);
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#members.list .member-card {
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+    align-items: center;
+}
+
+#members.list .member-card img {
+    width: 120px;
+    height: auto;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--font-color1);
+    text-align: center;
+    padding: 1.5rem;
+}

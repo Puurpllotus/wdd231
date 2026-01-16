@@ -1,0 +1,100 @@
+*{
+    font-family: "roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+header span{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.hamburger{
+background: none;
+border: none;
+color: black;
+cursor: pointer;
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 1.5rem;
+
+}
+
+.hamburger.show::before{
+    content: "\2715";
+}
+
+.navigation{
+    display: none;
+}
+.navigation.show{
+    display: block;
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a{
+    display: block;
+    padding:.8rem 10px;
+    color: Purple;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+.navigation li.current{
+    background-color: #f4f4f4;
+}
+.navigation a:hover{
+    color: rgb(227, 121, 248);
+    background-color: Black;
+}
+
+h1{
+    margin-left: 14px;
+}
+
+footer{
+    background-color: purple;
+    color: white;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.socials {
+display:flex;
+justify-content: center;
+column-gap: 8px;
+}
+.socials a{
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: white 2px dashed;
+}
+.social img{
+    width: 22px;
+    height: 22px;
+}
+.socials a:hover{
+    background-color: white;
+    
+}

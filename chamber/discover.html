@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover Bonny Island | Chamber of Commerce</title>
+    <meta name="description" content="Discover the beauty, industry, and culture of Bonny Island.">
+    <meta name="author" content="Sampson Longjohn">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Bonny Island Chamber of Commerce">
+    <meta property="og:description" content="Connect with local businesses, entrepreneurs, and professionals.">
+    <meta property="og:image" content="https://puurpllotus.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://puurpllotus.github.io/wdd231/chamber/home.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-main.webp" alt="Bonny Island Chamber logo" class="logo">
+        <span class="site-title">Bonny Island Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="current">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Bonny Island</h1>
+        <div class="discover-layout">
+            <aside class="sidebar">
+                <h2>Visitor Information</h2>
+                <div id="visitor-message" class="visitor-card">Loading...</div>
+
+                <div class="stats-box">
+                    <h3>Island Facts</h3>
+                    <p>Population: ~300,000</p>
+                    <p>Area: 214 km²</p>
+                    <p>Major Industry: Oil & Gas</p>
+                </div>
+            </aside>
+
+            <section id="places-container" class="places-grid">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact: <a href="mailto:chamber@bonnyisland.com">chamber@bonnyisland.com</a> | Address: Bonny Main St.
+            </p>
+            <p>&copy; <span id="currentyear"></span> | Sampson Longjohn | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

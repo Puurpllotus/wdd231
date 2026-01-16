@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Estridos Beauty Spa",
+    "address": "101 Main St",
+    "phone": "555-1234",
+    "website": "https://stridosspa.com",
+    "image": "estridos-spa.webp",
+    "membership": "gold",
+    "description": "Your neighborhood beauty and wellness spa."
+  },
+  {
+    "name": "Take Food",
+    "address": "202 Market Ave",
+    "phone": "555-5678",
+    "website": "https://takefood.com",
+    "image": "takefood.webp",
+    "membership": "silver",
+    "description": "Affordable meals and quick food delivery."
+  },
+  {
+    "name": "Green Gardens",
+    "address": "303 Flower Rd",
+    "phone": "555-2468",
+    "website": "https://greengardens.com",
+    "image": "green-garden.webp",
+    "membership": "bronze",
+    "description": "Landscaping and garden center."
+  },
+  {
+    "name": "Tech Titans",
+    "address": "404 Silicon Blvd",
+    "phone": "555-3698",
+    "website": "https://techtitans.com",
+    "image": "tech-titan.webp",
+    "membership": "gold",
+    "description": "IT consulting and hardware."
+  },
+  {
+    "name": "Efc Gym",
+    "address": "505 Workout Lane",
+    "phone": "555-6543",
+    "website": "https://efcfitness.com",
+    "image": "efc-gym.webp",
+    "membership": "silver",
+    "description": "Fitness center for all ages."
+  },
+  {
+    "name": "Book Nook",
+    "address": "606 Library Ave",
+    "phone": "555-8520",
+    "website": "https://booknook.com",
+    "image": "booknook.webp",
+    "membership": "bronze",
+    "description": "Cozy local bookstore."
+  },
+  {
+    "name": "Fresh Market",
+    "address": "707 Civic St",
+    "phone": "555-7410",
+    "website": "https://freshmarket.com",
+    "image": "fresh-market.webp",
+    "membership": "silver",
+    "description": "Fresh organic vegetables and fruits."
+  }
+]
