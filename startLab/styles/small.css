@@ -1,0 +1,23 @@
+*{box-sizing: border-box;}
+
+#openButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(rgb(199, 79, 199));
+}
+
+#dialogBox {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(rgb(224, 221, 46));
+}
+
+#closeButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(rgb(131, 172, 233));
+}
+
+::backdrop {
+    background: rgba(107, 39, 44, 0.5);
+}
