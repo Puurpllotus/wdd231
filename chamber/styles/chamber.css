@@ -459,9 +459,97 @@ main h1 {
     cursor: pointer;
 }
 
+/* --- DISCOVER PAGE --- */
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.sidebar {
+    background: var(--background-color);
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.visitor-card {
+    background: var(--font-color1);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--secondary-color);
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.place-card {
+    background: var(--font-color1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.place-card img {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* --- FOOTER --- */
 footer {
     background: var(--secondary-color);
     color: var(--font-color1);
     text-align: center;
     padding: 1.5rem;
+}
+
+footer a {
+    color: var(--background-color);
+    text-decoration: underline;
+}
+
+/* --- MODALS --- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 2000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--font-color1);
+    padding: 1.5rem;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
