@@ -134,7 +134,7 @@ function checkLocalStorage() {
   console.log("Visit logged to Local Storage");
 }
 
-/* PART 6: BOOKING CONFIRMATION PAGE SECURITY FIX */
+/* PART 6: BOOKING CONFIRMATION PAGE*/
 const currentUrl = window.location.href;
 if (currentUrl.includes('?')) {
   const queryString = currentUrl.split('?')[1];
