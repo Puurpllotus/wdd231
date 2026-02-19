@@ -29,7 +29,7 @@ const cruiseContainer = document.getElementById('cruise-container');
 if (cruiseContainer) {
   getCruiseData();
 }
-
+/*video note: This function is where we fetch our data and handle errors gracefully*/
 async function getCruiseData() {
   try {
     const response = await fetch('data/cruises.json');
@@ -45,7 +45,7 @@ async function getCruiseData() {
     cruiseContainer.innerHTML = '<p>Sorry, we could not load the cruises at this time. Please try again later.</p>';
   }
 }
-
+/*video note: This function takes the cruise data and creates HTML cards for each cruise, then adds event listeners to the buttons to open the modal with details*/
 function displayCruises(cruises) {
   cruiseContainer.innerHTML = '';
   cruises.forEach(cruise => {
