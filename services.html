@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRC&E | Services and Packages</title>
+    <meta name="description" content="Explore the dining and event packages available on the Lagos River Cruise.">
+    <meta name="author" content="Sampson Longjohn">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/faviconn.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-name"><img src="images/Lrce.webp" alt="LRC&E LOGO"></div>
+        <nav>
+            <ul aria-label="Main Navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="reservations.html">Reservation</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Exclusive Cruise Packages</h2>
+
+        <!-- VIDEO NOTE: Mention this filter section when discussing Array Methods -->
+        <div id="filters" class="filter-container">
+            <button class="filter-btn active" data-filter="all">Show All</button>
+            <button class="filter-btn" data-filter="Dinner">Dinner</button>
+            <button class="filter-btn" data-filter="Party">Party</button>
+            <button class="filter-btn" data-filter="Educational">Educational</button>
+        </div>
+
+        <hr>
+
+        <!-- VIDEO NOTE: This is the container where JavaScript will inject HTML -->
+        <section id="cruise-container" class="services-grid">
+            <!-- Loading message until JS runs -->
+            <p>Loading luxury cruises...</p>
+        </section>
+
+        <!-- VIDEO NOTE: This is the Dialog/Modal element, hidden by default -->
+        <dialog id="cruise-modal">
+            <div class="modal-content">
+                <button id="close-modal" aria-label="Close details">✖</button>
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <div class="modal-details">
+                    <p><strong>Duration:</strong> <span id="modal-duration"></span></p>
+                    <p><strong>Price:</strong> <span id="modal-price"></span></p>
+                </div>
+                <a href="reservations.html" class="cta-button">Book This Cruise</a>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-logo logo-name">LRC&E</div>
+        <div class="contact-info">
+            <p>Contact Info</p>
+            <p>+234 800 123 4567</p>
+            <p>info@lrc.com</p>
+        </div>
+        <div class="nav-links">
+            <p><a href="services.html">Services</a></p>
+            <p><a href="reservations.html">Book</a></p>
+        </div>
+        <div class="social-links">
+            <p>Follow Us</p>
+            <p>IG | YT | X</p>
+        </div>
+        <p>&copy;<span id="currentyear"></span> Lagos River Cruise & Events</p>
+        <p><a href="references.html">Image Sources & References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="#" target="_blank">View Project Video</a></p>
+    </footer>
+</body>
+
+</html>

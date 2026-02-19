@@ -1,0 +1,152 @@
+[
+  {
+    "id": "cruise-001",
+    "name": "Sunset Jazz & Jollof",
+    "type": "Dinner",
+    "price": "₦35,000",
+    "date": "2025-12-12",
+    "image": "images/sunset-jazz.webp",
+    "description": "Experience the soothing sounds of live saxophonists while enjoying unlimited smoky Jollof Rice as the sun sets over the Lekki-Ikoyi Link Bridge.",
+    "duration": "3 Hours"
+  },
+  {
+    "id": "cruise-002",
+    "name": "Afrobeats Party Boat",
+    "type": "Party",
+    "price": "₦20,000",
+    "date": "2025-12-13",
+    "image": "images/afrobeats-boat.webp",
+    "description": "The ultimate Friday night starter! DJ Spinall on the decks, open bar for the first hour, and nonstop energy cruising past Victoria Island.",
+    "duration": "4 Hours"
+  },
+  {
+    "id": "cruise-003",
+    "name": "Sunday Brunch on Water",
+    "type": "Lunch",
+    "price": "₦45,000",
+    "date": "2025-12-15",
+    "image": "images/brunch.webp",
+    "description": "A premium buffet featuring English breakfast classics and Nigerian favorites like Akara and Pap. Perfect for families.",
+    "duration": "2.5 Hours"
+  },
+  {
+    "id": "cruise-004",
+    "name": "Corporate Networking Mixer",
+    "type": "Business",
+    "price": "₦50,000",
+    "date": "2025-12-18",
+    "image": "images/corporate.webp",
+    "description": "Connect with Lagos' top executives in a serene environment. Includes canapés, cocktails, and a keynote speech.",
+    "duration": "3 Hours"
+  },
+  {
+    "id": "cruise-005",
+    "name": "Romantic Star-Gazing",
+    "type": "Dinner",
+    "price": "₦80,000",
+    "date": "2025-12-14",
+    "image": "images/romantic.webp",
+    "description": "A private table for two on the upper deck. Includes a 3-course meal, a bottle of wine, and live violin music.",
+    "duration": "3 Hours"
+  },
+  {
+    "id": "cruise-006",
+    "name": "Tarkwa Bay Beach Escape",
+    "type": "Adventure",
+    "price": "₦15,000",
+    "date": "2025-12-20",
+    "image": "images/tarkwa.webp",
+    "description": "Cruise to Tarkwa Bay for a day of surfing and relaxation. Includes boat transport and a light lunch box.",
+    "duration": "6 Hours"
+  },
+  {
+    "id": "cruise-007",
+    "name": "Cultural Heritage Tour",
+    "type": "Educational",
+    "price": "₦10,000",
+    "date": "2025-12-22",
+    "image": "images/culture.webp",
+    "description": "Learn the history of Lagos waterways, from the colonial era to modern day Eko Atlantic. Guided by a historian.",
+    "duration": "2 Hours"
+  },
+  {
+    "id": "cruise-008",
+    "name": "Suya & Sips Night",
+    "type": "Party",
+    "price": "₦18,000",
+    "date": "2025-12-19",
+    "image": "images/suya.webp",
+    "description": "Unlimited Suya (Beef & Chicken) paired with signature Chapman cocktails. Casual vibe with old school music.",
+    "duration": "3 Hours"
+  },
+  {
+    "id": "cruise-009",
+    "name": "Eko Atlantic Sightseeing",
+    "type": "Tour",
+    "price": "₦12,000",
+    "date": "2025-12-21",
+    "image": "images/eko-atlantic.webp",
+    "description": "See the new face of Lagos. A guided tour around the perimeter of the Great Wall of Lagos and the new city.",
+    "duration": "1.5 Hours"
+  },
+  {
+    "id": "cruise-010",
+    "name": "Seafood Extravaganza",
+    "type": "Dinner",
+    "price": "₦60,000",
+    "date": "2025-12-23",
+    "image": "images/seafood.webp",
+    "description": "For seafood lovers! Fresh prawns, lobster, and calamari grilled right on the deck. Includes white wine pairing.",
+    "duration": "3 Hours"
+  },
+  {
+    "id": "cruise-011",
+    "name": "Owambe Floating Party",
+    "type": "Party",
+    "price": "₦25,000",
+    "date": "2025-12-27",
+    "image": "images/owambe.webp",
+    "description": "Lagos style party on a boat! Live fuji band, money spraying allowed, and plenty of Amala.",
+    "duration": "5 Hours"
+  },
+  {
+    "id": "cruise-012",
+    "name": "New Year's Eve Countdown",
+    "type": "Special",
+    "price": "₦100,000",
+    "date": "2025-12-31",
+    "image": "images/nye.webp",
+    "description": "The most exclusive event of the year. Watch the fireworks from the middle of the lagoon. Champagne toast at midnight.",
+    "duration": "6 Hours"
+  },
+  {
+    "id": "cruise-013",
+    "name": "Photography Masterclass",
+    "type": "Educational",
+    "price": "₦30,000",
+    "date": "2026-01-05",
+    "image": "images/photo.webp",
+    "description": "Capture the Lagos skyline from unique angles. Led by a pro photographer. Bring your own camera.",
+    "duration": "4 Hours"
+  },
+  {
+    "id": "cruise-014",
+    "name": "Comedy Club Cruise",
+    "type": "Entertainment",
+    "price": "₦22,000",
+    "date": "2026-01-07",
+    "image": "images/comedy.webp",
+    "description": "Laugh your ribs off with Nigeria's funniest stand-up comedians. A night of jokes and laughter on the waves.",
+    "duration": "2.5 Hours"
+  },
+  {
+    "id": "cruise-015",
+    "name": "Wellness & Yoga Morning",
+    "type": "Wellness",
+    "price": "₦15,000",
+    "date": "2026-01-10",
+    "image": "images/yoga.webp",
+    "description": "Start your day with peace. Guided yoga session on the open deck followed by green smoothies.",
+    "duration": "2 Hours"
+  }
+]
