@@ -25,29 +25,46 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* PART 2: DATA FETCHING & DISPLAY (Runs on Services Page) */
-const cruiseContainer = document.getElementById('cruise-container');
-if (cruiseContainer) {
+if (document.getElementById('cruise-container') ||
+    document.getElementById('servicename')) {
   getCruiseData();
 }
 /*video note: This function is where we fetch our data and handle errors gracefully*/
 async function getCruiseData() {
   try {
-    const response = await fetch('data/cruises.json');
+    const response = await fetch('./data/cruises.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
+
     const data = await response.json();
-    displayCruises(data);
-    setupFilters(data);
-    populateFormOptions(data);
+
+    if (document.getElementById('cruise-container')) {
+      displayCruises(data);
+      setupFilters(data);
+    }
+
+    if (document.getElementById('servicename')) {
+      populateFormOptions(data);
+    }
+
   } catch (error) {
     console.error('Error fetching data:', error);
-    cruiseContainer.innerHTML = '<p>Sorry, we could not load the cruises at this time. Please try again later.</p>';
+
+    const container = document.getElementById('cruise-container');
+    if (container) {
+      container.innerHTML =
+        '<p>Sorry, we could not load the cruises at this time.</p>';
+    }
   }
 }
 /*video note: This function takes the cruise data and creates HTML cards for each cruise, then adds event listeners to the buttons to open the modal with details*/
 function displayCruises(cruises) {
+  const cruiseContainer = document.getElementById('cruise-container');
+  if (!cruiseContainer) return;
+
   cruiseContainer.innerHTML = '';
+
   cruises.forEach(cruise => {
     const card = document.createElement('div');
     card.className = 'service-card';
@@ -56,7 +73,9 @@ function displayCruises(cruises) {
       <h3>${cruise.name}</h3>
       <p class="price">${cruise.price}</p>
       <p>${cruise.description.substring(0, 80)}...</p>
-      <button class="cta-button open-modal-btn" data-id="${cruise.id}">View Details</button>
+      <button class="cta-button open-modal-btn" data-id="${cruise.id}">
+        View Details
+      </button>
     `;
     cruiseContainer.appendChild(card);
   });
@@ -69,7 +88,6 @@ function displayCruises(cruises) {
     });
   });
 }
-
 /* PART 3: ARRAY METHODS & FILTERING */
 function setupFilters(allCruises) {
   const filterBtns = document.querySelectorAll('.filter-btn');
