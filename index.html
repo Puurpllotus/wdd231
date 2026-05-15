@@ -11,10 +11,14 @@
 
     <link rel="icon" href="images/faviconn.ico" type="image/x-icon">
 
-<meta property="og:title" content="Lagos River Cruise & Events – Luxury Dining Experience">
-<meta property="og:description" content="Experience West Africa’s premier luxury floating restaurant offering private dining, sunset cruises, and exclusive event charters in Lagos.">
-<meta property="og:image" content="https://puurpllotus.github.io/wdd231/images/hero.webp">
-<meta property="og:url" content="https://puurpllotus.github.io/wdd231/index.html">
+    <meta property="og:title" content="Lagos River Cruise & Events – Luxury Dining Experience">
+    <meta property="og:description" content="Experience West Africa’s premier luxury floating restaurant offering private dining, sunset cruises, and exclusive event charters in Lagos.">
+    <meta property="og:image" content="https://puurpllotus.github.io/wdd231/images/hero.webp">
+    <meta property="og:url" content="https://puurpllotus.github.io/wdd231/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/desktop.css">
@@ -23,7 +27,9 @@
 
 <body>
     <header>
-        <div class="logo-name"><img src="images/lrce.webp" alt="LRC&E LOGO" loading="lazy"></div>
+        <div class="logo-name">
+            <img src="images/lrce.webp" alt="LRC&E LOGO" loading="lazy">
+        </div>
         <nav>
             <ul aria-label="Main Navigation">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -70,6 +76,8 @@
             </div>
         </section>
 
+        <hr>
+
         <section id="about-us" class="about-section">
             <div class="about-text-block">
                 <h2>The LRC&E Difference</h2>
@@ -82,10 +90,20 @@
             </div>
         </section>
 
+        <hr>
+
         <section class="reservation-callout">
             <h2>Ready to Reserve Your Cruise?</h2>
             <a href="reservations.html" class="cta-button">Make A Reservation</a>
         </section>
+
+        <dialog id="home-image-modal">
+            <div class="modal-content image-preview-content">
+                <button id="close-home-modal" aria-label="Close preview">✖</button>
+                <img id="home-modal-img" src="" alt="Full view">
+                <h3 id="home-modal-caption"></h3>
+            </div>
+        </dialog>
     </main>
 
     <footer>
@@ -101,7 +119,7 @@
         </div>
         <div class="nav-links">
             <h3>Navigation</h3>
-            <p><a href="index.html">Home</a>
+            <p><a href="index.html">Home</a></p>
             <p><a href="services.html">Services</a></p>
             <p><a href="reservations.html">Book</a></p>
         </div>
