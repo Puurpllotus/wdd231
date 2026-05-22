@@ -329,15 +329,18 @@ main h1 {
 }
 
 #members.list .member-card {
-    display: flex;
-    gap: 1rem;
+   display: flex;
+    flex-wrap: wrap; /* Allows text elements to safely wrap below on medium viewports */
+    gap: 1.5rem;
     text-align: left;
-    align-items: center;
+    align-items: flex-start;
+    padding: 1.5rem;
 }
 
 #members.list .member-card img {
     width: 120px;
     height: auto;
+    display: none;
 }
 
 .join-container {
